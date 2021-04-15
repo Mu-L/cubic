@@ -7,6 +7,10 @@
 
 官方网站：https://cubic.jiagoujishu.com
 
+Gitee: https://gitee.com/dromara/cubic
+
+Github: https://github.com/dromara/cubic
+
 Demo: http://47.104.79.116:6080
 
 特性：
