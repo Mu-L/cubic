@@ -3,10 +3,10 @@ package com.matrix.proxy.server.process;
 import com.alibaba.fastjson.JSON;
 import com.google.common.cache.*;
 import com.matrix.proxy.module.Command;
-import com.matrix.proxy.server.SyncFuture;
-import com.matrix.proxy.server.handler.ServerMessgaeProcess;
-import com.matrix.proxy.session.Session;
-import com.matrix.proxy.session.SessionManager;
+import com.cubic.proxy.common.server.SyncFuture;
+import com.cubic.proxy.common.handler.ServerMessageProcess;
+import com.cubic.proxy.common.session.Session;
+import com.cubic.proxy.common.session.SessionManager;
 import com.matrix.proxy.util.CubicContextHolder;
 import io.netty.channel.ChannelHandlerContext;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +21,7 @@ import java.util.concurrent.TimeUnit;
  * @Version 1.0
  */
 @Slf4j
-public class DefaultMessageProcess implements ServerMessgaeProcess {
+public class DefaultMessageProcess implements ServerMessageProcess {
 
     private final static LoadingCache<String, SyncFuture> futureCache;
     private SessionManager sessionManager;

@@ -8,6 +8,38 @@ export function appList(query) {
   })
 }
 
+export function threadPoolList(query) {
+  return request({
+    url: '/jvm/threadPoolList',
+    method: 'get',
+    params: query
+  })
+}
+
+
+export function getInstanceInfo(query) {
+  return request({
+    url: '/app/getInstanceInfo',
+    method: 'get',
+    params: query
+  })
+}
+
+export function getInstanceNames(query) {
+  return request({
+    url: '/app/getInstanceNames',
+    method: 'get',
+    params: query
+  })
+}
+
+export function getAppNames() {
+  return request({
+    url: '/app/getAppNames',
+    method: 'get'
+  })
+}
+
 export function fetchArticle(id) {
   return request({
     url: '/vue-element-admin/article/detail',
